@@ -24,7 +24,7 @@ public class ACDSession {
 
 	private ACDSession() {
 		AsyncHttpClientConfig asyncHttpClientConfig = new AsyncHttpClientConfig.Builder()
-			.setFollowRedirect(false)
+			.setFollowRedirect(true)
 			.build();
 		this.asyncHttpClient = new AsyncHttpClient(asyncHttpClientConfig);
 	}
